@@ -1,0 +1,6 @@
+    1  cd week1
+    2  pwd
+    3  touch something.txt
+    4  ls
+    5  rm something.txt
+    6  history > ex2.txt
