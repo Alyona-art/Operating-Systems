@@ -6,9 +6,8 @@
 #include <stdbool.h>
 int main()
 {
-    char *s;
+    char s[100];
     bool exit = false;
-    s = malloc(sizeof(char)*100);
     printf("MAX LENGTH 100 symbols\n");
     while(!exit) {
         scanf("%s", s);
@@ -17,3 +16,4 @@ int main()
         system(s);
     }
 }
+
