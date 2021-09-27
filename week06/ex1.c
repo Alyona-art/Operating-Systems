@@ -46,11 +46,11 @@ int main() {
     for(int i = 0; i < N; i++) {
         printf("-------------------------\n");
         printf("Enter data for process %d:\n", i+1);
-        printf("Arrival time is");
+        printf("Arrival time =");
         scanf("%d", &p[i].arrival_time);
-        printf("Burst time is");
+        printf("Burst time =");
         scanf("%d", &p[i].burst_time);
-        p[i].ID = i;
+        p[i].ID = i + 1;
     }
     for(int i = 0; i < N-1; i++)
         for(int j = i+1; j < N; j++) {
@@ -60,8 +60,9 @@ int main() {
                 p[j] = tmp;
             }
         }
-    
+
     compute_statistics(&p, N);
     print_statistics(&p, N);
+    
     return 0;
 }
