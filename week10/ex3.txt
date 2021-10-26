@@ -1,0 +1,16 @@
+660 _ex3.txt
+767 _ex3.txt
+777 _ex3.txt
+
+660 means that it assign permissions in binary:
+110 - for Owner
+110 - for Group
+000 - for Other
+Owner and Group have read and write permissions, and haven't execute 
+Other have no permissions
+
+767 is 111 110 111 in binary
+therefore Owner and Other have all permissions, 
+Group have only read and write
+
+777 - all, Owner, Group and Other have all permissions
