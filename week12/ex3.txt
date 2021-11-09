@@ -1,0 +1,13 @@
+Available shortcuts:
+p + e   -   I passed the Exam!
+c + a + p   -   Get some cappuccino!
+o + s + a   -   Get A for OS corse!
+p
+I passed the Exam!
+epa
+Get some cappuccino!
+cos
+Get A for OS corse!
+appppppppppppp
+I passed the Exam!
+e
