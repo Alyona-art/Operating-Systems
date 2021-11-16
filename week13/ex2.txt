@@ -1,0 +1,39 @@
+Recovery:
+We use recovery when we can Let deadlocks occur, detect them, and take action using one of 3 methods:
+
+Preemption
+It is used when manual intervention is possible to take and return a resource easily and without notice of the process.
+
+Rollback
+When it is possible to write new files with checkpoints and their sequences storing memory images and resource states.
+
+Killing processes
+When there are processes that can be killed and restarted without side effects so that other processes can continue their work.
+
+***
+Avoidance:
+When we know initially what the maximum resource requirements of the processes will be and when the number of processes is fixed, 
+then we can apply the Banker's Algorithm and avoid deadlocks.
+
+***
+Prevention:
+When can we structurally reject one of the four required
+conditions:
+
+Mutual exclusion
+When it is possible to organize a queue for the use of resources,
+for example, the daemon will be the only process requesting a physical printer, 
+and then several processes can produce their output at once, since it will spool the output.
+
+Hold and wait
+If the processes initially know how many resources they need and request them all once. 
+And the system is able to optimally allocate all resources and keep them as long as they are needed by the process
+
+No preemption
+When resources can be virtualized, for example spooling printer output to the disk. 
+Running out of disk space that will cause deadlocks is unlikely, if we have large disks.
+
+Circular wait Order resources numerically
+If a process needs only one resource allocation at any given time. 
+Or when we can number resources and follow the rule: processes can request a resource whenever they want, 
+but all requests must be made in the order of resource numbering.
